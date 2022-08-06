@@ -1967,6 +1967,7 @@ func New(_ context.Context) (*schema.Provider, error) {
 			"aws_servicecatalog_organizations_access":            servicecatalog.ResourceOrganizationsAccess(),
 			"aws_servicecatalog_portfolio":                       servicecatalog.ResourcePortfolio(),
 			"aws_servicecatalog_portfolio_share":                 servicecatalog.ResourcePortfolioShare(),
+			"aws_servicecatalog_accept_portfolio_share":          servicecatalog.ResourceAcceptPortfolioShare(),
 			"aws_servicecatalog_principal_portfolio_association": servicecatalog.ResourcePrincipalPortfolioAssociation(),
 			"aws_servicecatalog_product":                         servicecatalog.ResourceProduct(),
 			"aws_servicecatalog_product_portfolio_association":   servicecatalog.ResourceProductPortfolioAssociation(),
