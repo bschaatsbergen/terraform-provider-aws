@@ -53,6 +53,10 @@ resource "aws_rds_cluster" "secondary" {
   cluster_identifier        = "test-secondary-cluster"
   global_cluster_identifier = aws_rds_global_cluster.example.id
   db_subnet_group_name      = "default"
+
+  depends_on = [
+    aws_rds_cluster_instance.primary
+  ]
 }
 
 resource "aws_rds_cluster_instance" "secondary" {
@@ -63,15 +67,10 @@ resource "aws_rds_cluster_instance" "secondary" {
   cluster_identifier   = aws_rds_cluster.secondary.id
   instance_class       = "db.r4.large"
   db_subnet_group_name = "default"
-
-  depends_on = [
-    aws_rds_cluster_instance.primary
-  ]
 }
 ```
 
 ### New PostgreSQL Global Cluster
-
 
 ```terraform
 provider "aws" {
@@ -137,7 +136,6 @@ resource "aws_rds_cluster_instance" "secondary" {
   db_subnet_group_name = "default"
 }
 ```
-
 
 ### New Global Cluster From Existing DB Cluster
 
