@@ -17,7 +17,6 @@ func ResourceAcceptPortfolioShare() *schema.Resource {
 	return &schema.Resource{
 		Create: resourceAcceptPortfolioShareCreate,
 		Read:   resourceAcceptPortfolioShareRead,
-		Update: resourceAcceptPortfolioShareUpdate,
 		Delete: resourceAcceptPortfolioShareDelete,
 
 		Importer: &schema.ResourceImporter{
@@ -36,7 +35,7 @@ func ResourceAcceptPortfolioShare() *schema.Resource {
 				Required: true,
 				ForceNew: true,
 			},
-			"type": {
+			"portfolio_share_type": {
 				Type:         schema.TypeString,
 				Required:     true,
 				ForceNew:     true,
@@ -53,7 +52,7 @@ func resourceAcceptPortfolioShareCreate(d *schema.ResourceData, meta interface{}
 
 	input := &servicecatalog.AcceptPortfolioShareInput{
 		PortfolioId:        aws.String(portfolioId),
-		PortfolioShareType: aws.String(d.Get("type").(string)),
+		PortfolioShareType: aws.String(d.Get("portfolio_share_type").(string)),
 	}
 
 	if v, ok := d.GetOk("accept_language"); ok {
@@ -100,10 +99,11 @@ func resourceAcceptPortfolioShareRead(d *schema.ResourceData, meta interface{}) 
 
 	input := &servicecatalog.ListAcceptedPortfolioSharesInput{
 		AcceptLanguage:     aws.String(d.Get("accept_language").(string)),
-		PortfolioShareType: aws.String(d.Get("type").(string)),
+		PortfolioShareType: aws.String(d.Get("portfolio_share_type").(string)),
 	}
 
-	//TODO: Iterate over results to find the one with the matching portfolio id
+	output, err := conn.ListAcceptedPortfolioShares(input)
+
 	if err != nil {
 		return fmt.Errorf("error describing accepted Service Catalog Portfolio Share (%s): %w", d.Id(), err)
 	}
@@ -119,95 +119,6 @@ func resourceAcceptPortfolioShareRead(d *schema.ResourceData, meta interface{}) 
 	return nil
 }
 
-func resourceAcceptPortfolioShareUpdate(d *schema.ResourceData, meta interface{}) error {
-	conn := meta.(*conns.AWSClient).ServiceCatalogConn
-
-	if d.HasChanges("accept_language", "share_tag_options") {
-		input := &servicecatalog.UpdateAcceptPortfolioShareInput{
-			PortfolioId: aws.String(d.Get("portfolio_id").(string)),
-		}
-
-		if v, ok := d.GetOk("accept_language"); ok {
-			input.AcceptLanguage = aws.String(v.(string))
-		}
-
-		if v, ok := d.GetOk("share_tag_options"); ok {
-			input.ShareTagOptions = aws.Bool(v.(bool))
-		}
-
-		err := resource.Retry(d.Timeout(schema.TimeoutUpdate), func() *resource.RetryError {
-			_, err := conn.UpdateAcceptPortfolioShare(input)
-
-			if tfawserr.ErrMessageContains(err, servicecatalog.ErrCodeInvalidParametersException, "profile does not exist") {
-				return resource.RetryableError(err)
-			}
-
-			if err != nil {
-				return resource.NonRetryableError(err)
-			}
-
-			return nil
-		})
-
-		if tfresource.TimedOut(err) {
-			_, err = conn.UpdateAcceptPortfolioShare(input)
-		}
-
-		if err != nil {
-			return fmt.Errorf("error updating Service Catalog Portfolio Share (%s): %w", d.Id(), err)
-		}
-	}
-
-	return resourceAcceptPortfolioShareRead(d, meta)
-}
-
 func resourceAcceptPortfolioShareDelete(d *schema.ResourceData, meta interface{}) error {
-	conn := meta.(*conns.AWSClient).ServiceCatalogConn
-
-	input := &servicecatalog.DeleteAcceptPortfolioShareInput{
-		PortfolioId: aws.String(d.Get("portfolio_id").(string)),
-	}
-
-	if v, ok := d.GetOk("accept_language"); ok {
-		input.AcceptLanguage = aws.String(v.(string))
-	}
-
-	if v, ok := d.GetOk("type"); ok && v.(string) == servicecatalog.DescribeAcceptPortfolioShareTypeAccount {
-		input.AccountId = aws.String(d.Get("principal_id").(string))
-	} else {
-		orgNode := &servicecatalog.OrganizationNode{}
-		orgNode.Value = aws.String(d.Get("principal_id").(string))
-
-		if v.(string) == servicecatalog.DescribeAcceptPortfolioShareTypeOrganizationMemberAccount {
-			// portfolio_share type ORGANIZATION_MEMBER_ACCOUNT = org node type ACCOUNT
-			orgNode.Type = aws.String(servicecatalog.OrganizationNodeTypeAccount)
-		} else {
-			orgNode.Type = aws.String(d.Get("type").(string))
-		}
-
-		input.OrganizationNode = orgNode
-	}
-
-	output, err := conn.DeleteAcceptPortfolioShare(input)
-
-	if tfawserr.ErrCodeEquals(err, servicecatalog.ErrCodeResourceNotFoundException) {
-		return nil
-	}
-
-	if err != nil {
-		return fmt.Errorf("error deleting Service Catalog Portfolio Share (%s): %w", d.Id(), err)
-	}
-
-	// only get a token if organization node, otherwise check without token
-	if output.AcceptPortfolioShareToken != nil {
-		if _, err := WaitAcceptPortfolioShareDeletedWithToken(conn, aws.StringValue(output.AcceptPortfolioShareToken), d.Timeout(schema.TimeoutDelete)); err != nil {
-			return fmt.Errorf("error waiting for Service Catalog Portfolio Share (%s) to be deleted: %w", d.Id(), err)
-		}
-	} else {
-		if _, err := WaitAcceptPortfolioShareDeleted(conn, d.Get("portfolio_id").(string), d.Get("type").(string), d.Get("principal_id").(string), d.Timeout(schema.TimeoutDelete)); err != nil {
-			return fmt.Errorf("error waiting for Service Catalog Portfolio Share (%s) to be deleted: %w", d.Id(), err)
-		}
-	}
-
 	return nil
 }
