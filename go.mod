@@ -68,7 +68,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssmcontacts v1.17.2
 	github.com/aws/aws-sdk-go-v2/service/ssmincidents v1.23.2
 	github.com/aws/aws-sdk-go-v2/service/swf v1.17.5
-	github.com/aws/aws-sdk-go-v2/service/timestreamwrite v1.19.2
+	github.com/aws/aws-sdk-go-v2/service/timestreamwrite v1.20.0
 	github.com/aws/aws-sdk-go-v2/service/transcribe v1.29.0
 	github.com/aws/aws-sdk-go-v2/service/verifiedpermissions v1.3.0
 	github.com/aws/aws-sdk-go-v2/service/vpclattice v1.2.2
