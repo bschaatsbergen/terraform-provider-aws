@@ -85,8 +85,8 @@ github.com/aws/aws-sdk-go-v2/service/emrserverless v1.11.2 h1:diyMrawOZ56CavFS//
 github.com/aws/aws-sdk-go-v2/service/emrserverless v1.11.2/go.mod h1:ZrmnnT6zI3+0XsQIGCu/vXhIFk4Vwu4WKqeMDSzm4z4=
 github.com/aws/aws-sdk-go-v2/service/finspace v1.12.4 h1:xML1DGju5bsRtFejZfHuWtaut3WkYrGTHMf2G3T3de0=
 github.com/aws/aws-sdk-go-v2/service/finspace v1.12.4/go.mod h1:TKYYw/RwUTrm8/6qRvxtNZpAfzPJ0zrUJAWOrrreCpQ=
-github.com/aws/aws-sdk-go-v2/service/fis v1.16.2 h1:xF0M2Psxq96eDH68AswIe13jb2fvlMM9criypoQKotY=
-github.com/aws/aws-sdk-go-v2/service/fis v1.16.2/go.mod h1:zLKsp8cB3L0gqEW4d8NG1cZwQeczg4HqqLm5/b9d8rs=
+github.com/aws/aws-sdk-go-v2/service/fis v1.17.0 h1:zAsleap91sZkiLMQm0oB1ypNdGdSpAtCgRrBY35Fiwg=
+github.com/aws/aws-sdk-go-v2/service/fis v1.17.0/go.mod h1:zLKsp8cB3L0gqEW4d8NG1cZwQeczg4HqqLm5/b9d8rs=
 github.com/aws/aws-sdk-go-v2/service/glacier v1.16.2 h1:3e1Y17V637Qx/9rZJZFpC1FR/lL3Js9IFwZCWCkxiIo=
 github.com/aws/aws-sdk-go-v2/service/glacier v1.16.2/go.mod h1:W5b9hqb4sCTIBOacfItRmL72QzvB2Qasq5tmJfn9BlQ=
 github.com/aws/aws-sdk-go-v2/service/healthlake v1.17.7 h1:785/FmKD/qDYKW2adVxc4y3PIybe+U/qRI3zHe3quLw=

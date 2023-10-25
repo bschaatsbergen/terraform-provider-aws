@@ -28,7 +28,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ec2 v1.126.0
 	github.com/aws/aws-sdk-go-v2/service/emrserverless v1.11.2
 	github.com/aws/aws-sdk-go-v2/service/finspace v1.12.4
-	github.com/aws/aws-sdk-go-v2/service/fis v1.16.2
+	github.com/aws/aws-sdk-go-v2/service/fis v1.17.0
 	github.com/aws/aws-sdk-go-v2/service/glacier v1.16.2
 	github.com/aws/aws-sdk-go-v2/service/healthlake v1.17.7
 	github.com/aws/aws-sdk-go-v2/service/identitystore v1.18.4
