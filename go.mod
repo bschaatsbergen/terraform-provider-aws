@@ -73,7 +73,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/verifiedpermissions v1.3.0
 	github.com/aws/aws-sdk-go-v2/service/vpclattice v1.2.2
 	github.com/aws/aws-sdk-go-v2/service/workspaces v1.31.3
-	github.com/aws/aws-sdk-go-v2/service/xray v1.19.0
+	github.com/aws/aws-sdk-go-v2/service/xray v1.20.0
 	github.com/beevik/etree v1.2.0
 	github.com/google/go-cmp v0.6.0
 	github.com/hashicorp/aws-cloudformation-resource-schema-sdk-go v0.21.0
