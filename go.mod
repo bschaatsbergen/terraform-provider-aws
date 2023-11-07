@@ -53,7 +53,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/rbin v1.12.0
 	github.com/aws/aws-sdk-go-v2/service/rds v1.61.0
 	github.com/aws/aws-sdk-go-v2/service/redshiftdata v1.22.0
-	github.com/aws/aws-sdk-go-v2/service/resourceexplorer2 v1.6.0
+	github.com/aws/aws-sdk-go-v2/service/resourceexplorer2 v1.6.1
 	github.com/aws/aws-sdk-go-v2/service/resourcegroups v1.18.0
 	github.com/aws/aws-sdk-go-v2/service/resourcegroupstaggingapi v1.18.0
 	github.com/aws/aws-sdk-go-v2/service/rolesanywhere v1.5.0
