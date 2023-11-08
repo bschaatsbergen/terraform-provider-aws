@@ -5,11 +5,11 @@ go 1.20
 require (
 	github.com/ProtonMail/go-crypto v0.0.0-20230923063757-afb1ddc0824c
 	github.com/YakDriver/regexache v0.23.0
-	github.com/aws/aws-sdk-go v1.47.2
+	github.com/aws/aws-sdk-go v1.47.5
 	github.com/aws/aws-sdk-go-v2 v1.22.1
-	github.com/aws/aws-sdk-go-v2/config v1.22.0
+	github.com/aws/aws-sdk-go-v2/config v1.22.2
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.14.2
-	github.com/aws/aws-sdk-go-v2/feature/s3/manager v1.13.1
+	github.com/aws/aws-sdk-go-v2/feature/s3/manager v1.13.3
 	github.com/aws/aws-sdk-go-v2/service/accessanalyzer v1.23.0
 	github.com/aws/aws-sdk-go-v2/service/account v1.13.0
 	github.com/aws/aws-sdk-go-v2/service/acm v1.21.0
@@ -17,7 +17,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/athena v1.34.0
 	github.com/aws/aws-sdk-go-v2/service/auditmanager v1.29.0
 	github.com/aws/aws-sdk-go-v2/service/cleanrooms v1.6.0
-	github.com/aws/aws-sdk-go-v2/service/cloudcontrol v1.14.0
+	github.com/aws/aws-sdk-go-v2/service/cloudcontrol v1.14.1
 	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.26.0
 	github.com/aws/aws-sdk-go-v2/service/codecatalyst v1.7.0
 	github.com/aws/aws-sdk-go-v2/service/codestarconnections v1.17.0
@@ -51,9 +51,9 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/pricing v1.23.0
 	github.com/aws/aws-sdk-go-v2/service/qldb v1.18.0
 	github.com/aws/aws-sdk-go-v2/service/rbin v1.12.0
-	github.com/aws/aws-sdk-go-v2/service/rds v1.61.0
+	github.com/aws/aws-sdk-go-v2/service/rds v1.62.0
 	github.com/aws/aws-sdk-go-v2/service/redshiftdata v1.22.0
-	github.com/aws/aws-sdk-go-v2/service/resourceexplorer2 v1.6.0
+	github.com/aws/aws-sdk-go-v2/service/resourceexplorer2 v1.6.1
 	github.com/aws/aws-sdk-go-v2/service/resourcegroups v1.18.0
 	github.com/aws/aws-sdk-go-v2/service/resourcegroupstaggingapi v1.18.0
 	github.com/aws/aws-sdk-go-v2/service/rolesanywhere v1.5.0
@@ -126,7 +126,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/credentials v1.15.1 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/configsources v1.2.1 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.5.1 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/ini v1.5.0 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/ini v1.5.1 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/v4a v1.2.1 // indirect
 	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.23.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/iam v1.22.7 // indirect
