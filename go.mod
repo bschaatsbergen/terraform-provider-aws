@@ -5,9 +5,9 @@ go 1.20
 require (
 	github.com/ProtonMail/go-crypto v0.0.0-20230923063757-afb1ddc0824c
 	github.com/YakDriver/regexache v0.23.0
-	github.com/aws/aws-sdk-go v1.48.15
+	github.com/aws/aws-sdk-go v1.48.16
 	github.com/aws/aws-sdk-go-v2 v1.24.0
-	github.com/aws/aws-sdk-go-v2/config v1.26.0
+	github.com/aws/aws-sdk-go-v2/config v1.26.1
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.14.10
 	github.com/aws/aws-sdk-go-v2/feature/s3/manager v1.15.6
 	github.com/aws/aws-sdk-go-v2/service/accessanalyzer v1.26.4
@@ -77,7 +77,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/resourcegroupstaggingapi v1.19.4
 	github.com/aws/aws-sdk-go-v2/service/rolesanywhere v1.6.4
 	github.com/aws/aws-sdk-go-v2/service/route53domains v1.20.4
-	github.com/aws/aws-sdk-go-v2/service/s3 v1.47.4
+	github.com/aws/aws-sdk-go-v2/service/s3 v1.47.5
 	github.com/aws/aws-sdk-go-v2/service/s3control v1.41.4
 	github.com/aws/aws-sdk-go-v2/service/scheduler v1.6.4
 	github.com/aws/aws-sdk-go-v2/service/securityhub v1.43.4
@@ -86,12 +86,12 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sesv2 v1.24.4
 	github.com/aws/aws-sdk-go-v2/service/signer v1.19.5
 	github.com/aws/aws-sdk-go-v2/service/sns v1.26.4
-	github.com/aws/aws-sdk-go-v2/service/sqs v1.29.4
+	github.com/aws/aws-sdk-go-v2/service/sqs v1.29.5
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.44.4
 	github.com/aws/aws-sdk-go-v2/service/ssmcontacts v1.20.4
 	github.com/aws/aws-sdk-go-v2/service/ssmincidents v1.27.4
 	github.com/aws/aws-sdk-go-v2/service/ssoadmin v1.23.4
-	github.com/aws/aws-sdk-go-v2/service/sts v1.26.4
+	github.com/aws/aws-sdk-go-v2/service/sts v1.26.5
 	github.com/aws/aws-sdk-go-v2/service/swf v1.20.4
 	github.com/aws/aws-sdk-go-v2/service/timestreamwrite v1.23.5
 	github.com/aws/aws-sdk-go-v2/service/transcribe v1.34.4
@@ -104,8 +104,8 @@ require (
 	github.com/gertd/go-pluralize v0.2.1
 	github.com/google/go-cmp v0.6.0
 	github.com/hashicorp/aws-cloudformation-resource-schema-sdk-go v0.21.0
-	github.com/hashicorp/aws-sdk-go-base/v2 v2.0.0-beta.44
-	github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2 v2.0.0-beta.45
+	github.com/hashicorp/aws-sdk-go-base/v2 v2.0.0-beta.45
+	github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2 v2.0.0-beta.46
 	github.com/hashicorp/awspolicyequivalence v1.6.0
 	github.com/hashicorp/go-cleanhttp v0.5.2
 	github.com/hashicorp/go-cty v1.4.1-0.20200723130312-85980079f637
@@ -147,20 +147,20 @@ require (
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
 	github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.5.4 // indirect
-	github.com/aws/aws-sdk-go-v2/credentials v1.16.11 // indirect
+	github.com/aws/aws-sdk-go-v2/credentials v1.16.12 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/configsources v1.2.9 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.5.9 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/ini v1.7.1 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/ini v1.7.2 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/v4a v1.2.9 // indirect
-	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.26.2 // indirect
-	github.com/aws/aws-sdk-go-v2/service/iam v1.28.1 // indirect
+	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.26.6 // indirect
+	github.com/aws/aws-sdk-go-v2/service/iam v1.28.5 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.10.4 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/checksum v1.2.9 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/endpoint-discovery v1.8.10 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.10.9 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/s3shared v1.16.9 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sso v1.18.4 // indirect
-	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.21.4 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.18.5 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.21.5 // indirect
 	github.com/aws/smithy-go v1.19.0 // indirect
 	github.com/bgentry/speakeasy v0.1.0 // indirect
 	github.com/boombuler/barcode v1.0.1 // indirect
