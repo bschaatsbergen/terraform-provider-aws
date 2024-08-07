@@ -23,7 +23,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/appconfig v1.31.3
 	github.com/aws/aws-sdk-go-v2/service/appfabric v1.9.3
 	github.com/aws/aws-sdk-go-v2/service/appflow v1.43.3
-	github.com/aws/aws-sdk-go-v2/service/appintegrations v1.27.3
+	github.com/aws/aws-sdk-go-v2/service/appintegrations v1.28.0
 	github.com/aws/aws-sdk-go-v2/service/applicationautoscaling v1.31.0
 	github.com/aws/aws-sdk-go-v2/service/applicationinsights v1.26.3
 	github.com/aws/aws-sdk-go-v2/service/applicationsignals v1.3.0
@@ -67,7 +67,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/codestarconnections v1.27.3
 	github.com/aws/aws-sdk-go-v2/service/codestarnotifications v1.24.3
 	github.com/aws/aws-sdk-go-v2/service/cognitoidentity v1.25.5
-	github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider v1.41.4
+	github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider v1.42.0
 	github.com/aws/aws-sdk-go-v2/service/comprehend v1.33.3
 	github.com/aws/aws-sdk-go-v2/service/computeoptimizer v1.37.3
 	github.com/aws/aws-sdk-go-v2/service/configservice v1.48.3
@@ -75,14 +75,14 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/controltower v1.16.4
 	github.com/aws/aws-sdk-go-v2/service/costandusagereportservice v1.26.3
 	github.com/aws/aws-sdk-go-v2/service/costexplorer v1.40.3
-	github.com/aws/aws-sdk-go-v2/service/costoptimizationhub v1.7.3
+	github.com/aws/aws-sdk-go-v2/service/costoptimizationhub v1.8.0
 	github.com/aws/aws-sdk-go-v2/service/customerprofiles v1.39.3
 	github.com/aws/aws-sdk-go-v2/service/databasemigrationservice v1.40.3
 	github.com/aws/aws-sdk-go-v2/service/databrew v1.31.3
 	github.com/aws/aws-sdk-go-v2/service/dataexchange v1.30.3
 	github.com/aws/aws-sdk-go-v2/service/datapipeline v1.23.3
 	github.com/aws/aws-sdk-go-v2/service/datasync v1.40.3
-	github.com/aws/aws-sdk-go-v2/service/datazone v1.16.0
+	github.com/aws/aws-sdk-go-v2/service/datazone v1.17.0
 	github.com/aws/aws-sdk-go-v2/service/dax v1.21.4
 	github.com/aws/aws-sdk-go-v2/service/detective v1.29.3
 	github.com/aws/aws-sdk-go-v2/service/devicefarm v1.25.2
@@ -94,7 +94,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/drs v1.28.3
 	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.34.4
 	github.com/aws/aws-sdk-go-v2/service/ec2 v1.173.0
-	github.com/aws/aws-sdk-go-v2/service/ecr v1.31.0
+	github.com/aws/aws-sdk-go-v2/service/ecr v1.32.0
 	github.com/aws/aws-sdk-go-v2/service/ecrpublic v1.25.3
 	github.com/aws/aws-sdk-go-v2/service/ecs v1.44.3
 	github.com/aws/aws-sdk-go-v2/service/efs v1.31.3
@@ -116,7 +116,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/fsx v1.47.2
 	github.com/aws/aws-sdk-go-v2/service/glacier v1.24.3
 	github.com/aws/aws-sdk-go-v2/service/globalaccelerator v1.27.0
-	github.com/aws/aws-sdk-go-v2/service/glue v1.91.0
+	github.com/aws/aws-sdk-go-v2/service/glue v1.92.0
 	github.com/aws/aws-sdk-go-v2/service/grafana v1.24.3
 	github.com/aws/aws-sdk-go-v2/service/greengrass v1.25.3
 	github.com/aws/aws-sdk-go-v2/service/groundstation v1.29.3
@@ -158,7 +158,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/neptunegraph v1.10.3
 	github.com/aws/aws-sdk-go-v2/service/networkfirewall v1.41.0
 	github.com/aws/aws-sdk-go-v2/service/networkmonitor v1.5.3
-	github.com/aws/aws-sdk-go-v2/service/oam v1.13.3
+	github.com/aws/aws-sdk-go-v2/service/oam v1.13.4
 	github.com/aws/aws-sdk-go-v2/service/opensearchserverless v1.13.3
 	github.com/aws/aws-sdk-go-v2/service/organizations v1.30.2
 	github.com/aws/aws-sdk-go-v2/service/osis v1.12.3
@@ -222,7 +222,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/wafregional v1.23.3
 	github.com/aws/aws-sdk-go-v2/service/wafv2 v1.51.4
 	github.com/aws/aws-sdk-go-v2/service/wellarchitected v1.32.3
-	github.com/aws/aws-sdk-go-v2/service/workspaces v1.44.3
+	github.com/aws/aws-sdk-go-v2/service/workspaces v1.45.0
 	github.com/aws/aws-sdk-go-v2/service/workspacesweb v1.21.3
 	github.com/aws/aws-sdk-go-v2/service/xray v1.27.3
 	github.com/aws/smithy-go v1.20.3
