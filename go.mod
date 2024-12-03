@@ -48,7 +48,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/chatbot v1.9.1
 	github.com/aws/aws-sdk-go-v2/service/chime v1.34.7
 	github.com/aws/aws-sdk-go-v2/service/chimesdkmediapipelines v1.21.2
-	github.com/aws/aws-sdk-go-v2/service/chimesdkvoice v1.19.6
+	github.com/aws/aws-sdk-go-v2/service/chimesdkvoice v1.20.0
 	github.com/aws/aws-sdk-go-v2/service/cleanrooms v1.21.0
 	github.com/aws/aws-sdk-go-v2/service/cloud9 v1.28.7
 	github.com/aws/aws-sdk-go-v2/service/cloudcontrol v1.23.2
@@ -107,7 +107,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/efs v1.34.1
 	github.com/aws/aws-sdk-go-v2/service/eks v1.53.0
 	github.com/aws/aws-sdk-go-v2/service/elasticache v1.44.1
-	github.com/aws/aws-sdk-go-v2/service/elasticbeanstalk v1.28.6
+	github.com/aws/aws-sdk-go-v2/service/elasticbeanstalk v1.28.7
 	github.com/aws/aws-sdk-go-v2/service/elasticloadbalancing v1.28.6
 	github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2 v1.43.1
 	github.com/aws/aws-sdk-go-v2/service/elasticsearchservice v1.32.7
@@ -214,7 +214,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/route53resolver v1.34.2
 	github.com/aws/aws-sdk-go-v2/service/rum v1.21.7
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.70.0
-	github.com/aws/aws-sdk-go-v2/service/s3control v1.51.0
+	github.com/aws/aws-sdk-go-v2/service/s3control v1.52.0
 	github.com/aws/aws-sdk-go-v2/service/s3outposts v1.28.7
 	github.com/aws/aws-sdk-go-v2/service/sagemaker v1.168.1
 	github.com/aws/aws-sdk-go-v2/service/scheduler v1.12.7
