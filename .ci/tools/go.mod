@@ -6,13 +6,13 @@ require (
 	github.com/YakDriver/tfproviderdocs v0.22.0
 	github.com/client9/misspell v0.3.4
 	github.com/golangci/golangci-lint/v2 v2.4.0
-	github.com/hashicorp/copywrite v0.22.0
+	github.com/hashicorp/copywrite v0.25.1
 	github.com/hashicorp/go-changelog v0.0.0-20250127101332-effe3832fb0b
 	github.com/katbyte/terrafmt v0.5.5
 	github.com/pavius/impi v0.0.3
 	github.com/rhysd/actionlint v1.7.7
 	github.com/terraform-linters/tflint v0.58.1
-	golang.org/x/tools v0.36.0
+	golang.org/x/tools v0.38.0
 	mvdan.cc/gofumpt v0.8.0
 )
 
@@ -91,9 +91,9 @@ require (
 	github.com/charmbracelet/x/cellbuf v0.0.13 // indirect
 	github.com/charmbracelet/x/term v0.2.1 // indirect
 	github.com/ckaznocha/intrange v0.3.1 // indirect
-	github.com/cli/go-gh/v2 v2.12.1 // indirect
+	github.com/cli/go-gh/v2 v2.12.2 // indirect
 	github.com/cli/safeexec v1.0.1 // indirect
-	github.com/cloudflare/circl v1.6.1 // indirect
+	github.com/cloudflare/circl v1.6.3 // indirect
 	github.com/cncf/xds/go v0.0.0-20250326154945-ae57f3c0d45f // indirect
 	github.com/curioswitch/go-reassign v0.3.0 // indirect
 	github.com/cyberphone/json-canonicalization v0.0.0-20220623050100-57a0ce2678a7 // indirect
@@ -200,8 +200,7 @@ require (
 	github.com/in-toto/in-toto-golang v0.9.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
-	github.com/jedib0t/go-pretty v4.3.0+incompatible // indirect
-	github.com/jedib0t/go-pretty/v6 v6.4.6 // indirect
+	github.com/jedib0t/go-pretty/v6 v6.6.8 // indirect
 	github.com/jedisct1/go-minisign v0.0.0-20211028175153-1c139d1cc84b // indirect
 	github.com/jessevdk/go-flags v1.6.1 // indirect
 	github.com/jgautheron/goconst v1.8.2 // indirect
@@ -244,7 +243,7 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/mattn/go-shellwords v1.0.12 // indirect
-	github.com/mergestat/timediff v0.0.3 // indirect
+	github.com/mergestat/timediff v0.0.4 // indirect
 	github.com/mgechev/revive v1.11.0 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
 	github.com/mitchellh/cli v1.1.5 // indirect
@@ -288,7 +287,7 @@ require (
 	github.com/ryancurrah/gomodguard v1.4.1 // indirect
 	github.com/ryanrolds/sqlclosecheck v0.5.1 // indirect
 	github.com/sagikazarmark/locafero v0.7.0 // indirect
-	github.com/samber/lo v1.37.0 // indirect
+	github.com/samber/lo v1.51.0 // indirect
 	github.com/sanposhiho/wastedassign/v2 v2.1.0 // indirect
 	github.com/santhosh-tekuri/jsonschema/v6 v6.0.2 // indirect
 	github.com/sashamelentyev/interfacebloat v1.1.0 // indirect
@@ -312,10 +311,10 @@ require (
 	github.com/sourcegraph/go-diff v0.7.0 // indirect
 	github.com/sourcegraph/go-lsp v0.0.0-20200429204803-219e11d77f5d // indirect
 	github.com/sourcegraph/jsonrpc2 v0.2.1 // indirect
-	github.com/spf13/afero v1.14.0 // indirect
+	github.com/spf13/afero v1.15.0 // indirect
 	github.com/spf13/cast v1.8.0 // indirect
-	github.com/spf13/cobra v1.9.1 // indirect
-	github.com/spf13/pflag v1.0.7 // indirect
+	github.com/spf13/cobra v1.10.1 // indirect
+	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/spf13/viper v1.20.1 // indirect
 	github.com/spiffe/go-spiffe/v2 v2.5.0 // indirect
 	github.com/ssgreg/nlreturn/v2 v2.2.1 // indirect
@@ -327,7 +326,7 @@ require (
 	github.com/terraform-linters/tflint-plugin-sdk v0.22.0 // indirect
 	github.com/terraform-linters/tflint-ruleset-terraform v0.12.0 // indirect
 	github.com/tetafro/godot v1.5.1 // indirect
-	github.com/thanhpk/randstr v1.0.4 // indirect
+	github.com/thanhpk/randstr v1.0.6 // indirect
 	github.com/theupdateframework/go-tuf v0.7.0 // indirect
 	github.com/theupdateframework/go-tuf/v2 v2.1.1 // indirect
 	github.com/timakin/bodyclose v0.0.0-20241222091800-1db5c5ca4d67 // indirect
@@ -372,16 +371,16 @@ require (
 	go.uber.org/automaxprocs v1.6.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	golang.org/x/crypto v0.41.0 // indirect
+	golang.org/x/crypto v0.45.0 // indirect
 	golang.org/x/exp v0.0.0-20240909161429-701f63a606c0 // indirect
 	golang.org/x/exp/typeparams v0.0.0-20250620022241-b7579e27df2b // indirect
-	golang.org/x/mod v0.27.0 // indirect
-	golang.org/x/net v0.43.0 // indirect
+	golang.org/x/mod v0.29.0 // indirect
+	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/oauth2 v0.30.0 // indirect
-	golang.org/x/sync v0.16.0 // indirect
-	golang.org/x/sys v0.35.0 // indirect
-	golang.org/x/term v0.34.0 // indirect
-	golang.org/x/text v0.28.0 // indirect
+	golang.org/x/sync v0.19.0 // indirect
+	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/term v0.37.0 // indirect
+	golang.org/x/text v0.31.0 // indirect
 	golang.org/x/time v0.12.0 // indirect
 	google.golang.org/api v0.242.0 // indirect
 	google.golang.org/genproto v0.0.0-20250505200425-f936aa4a68b2 // indirect
